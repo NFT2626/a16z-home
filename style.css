@@ -56,7 +56,7 @@ h1 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	object-fit: cover;
+	object-fit: fill;
 }
 
 .video-container:after {
@@ -114,3 +114,8 @@ h1 {
 .topic { font-size: 19.5px; text-decoration: none; color: rgb(211, 249, 255); font-weight: 1000; }
 
 .topic2 { font-size: 19.5px; text-decoration: none; color: rgb(0, 0, 0); font-weight: 1000; }
+
+.responsive {
+	width: 35%;
+	height: auto;
+  }
