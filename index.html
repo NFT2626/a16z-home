@@ -94,12 +94,36 @@
 			chain is, the more off-chain storage it encourages.</p>
 			<br>
 			<br>
-		
-		<p>A16z adds a third option. Orders are stored on-chain, but on a distinct chain than the rest of the data. Orders do
-			not require the whole strength of Ethereum to secure them because they are self-contained signed messages. Instead,
-			A16Z uses Arweave to store orders as a low-cost &quot;Data Lake.&quot; It's inexpensive enough that markets can
-			continue to provide the free listing experience that customers demand, while still being secure enough to ensure
-			data availability without permission.</p>
+			
+			<p>A16z adds a third option. Orders are stored on-chain, but on a distinct chain than the rest of the data. Orders do
+				not require the whole strength of Ethereum to secure them because they are self-contained signed messages. Instead,
+				A16Z uses Arweave to store orders as a low-cost &quot;Data Lake.&quot; It's inexpensive enough that markets can
+				continue to provide the free listing experience that customers demand, while still being secure enough to ensure
+				data availability without permission.</p>
+			<br>
+			<br>
+			<p>Arweave's five-minute block times would normally be too sluggish for a busy order book, but here's the cool part: we
+				don't have to wait for blocks to be confirmed. The Indexer can ingest the orders as soon as they enter the mempool
+				because they are targeted to a different chain, making the Reservoir Order Book real-time, highly accessible, and
+				globally consistent..</p>
+			<br>
+			<br>
+			<br>
+			<h1>A16Z Data Lake</h1>
+			<br>
+			<p>Built on top of Arweave, the A16Z Data Lake is an open and permissionless data repository. Designed to put off-chain
+				liquidity onto the blockchain so that it can be leveraged by everyone. This is essential for creating modular
+				protocols and apps that aren't reliant on a single central gatekeeper.
+				<br>
+			<br>
+			
+			A16Z Data Lake, like data lakes used in analytics, is focused on storing raw order data without really validating if it
+				is
+				genuine. Partly to keep costs low, and partly because validating tokens requires knowledge of the parent
+				blockchain's
+				state in order to determine who owns particular tokens. An Indexer node, which can recreate the state of the Order
+				Book
+				from the raw data on each chain, performs this validation at a higher level.</p>
 			<br>
 			<br>
 		
