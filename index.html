@@ -85,17 +85,34 @@
 		<p>By fully embracing the web3 principles of open data and compatibility, A16Z aims to unleash a wave of
 			innovation at all layers of the stack, bringing vastly improved liquidity to NFTs.</p>
 		</p>
-
+		<br>
+		<h1>Architecture</h1>
+		<br>
+		<p>You normally have two options when designing an order book: optimize for cost (store orders off-chain) or optimize
+			for openness (store orders on-chain). Because it's just too expensive to hold orders on-chain on Ethereum, where 80%
+			of NFT is transacted, off-chain order books have dominated (OpenSea, Rarible..). Surprisingly, the more secure a
+			chain is, the more off-chain storage it encourages.</p>
+			<br>
+			<br>
+		
+		<p>A16z adds a third option. Orders are stored on-chain, but on a distinct chain than the rest of the data. Orders do
+			not require the whole strength of Ethereum to secure them because they are self-contained signed messages. Instead,
+			A16Z uses Arweave to store orders as a low-cost &quot;Data Lake.&quot; It's inexpensive enough that markets can
+			continue to provide the free listing experience that customers demand, while still being secure enough to ensure
+			data availability without permission.</p>
+			<br>
+			<br>
+		
 		<a href="https://market.a16z.tk/" class="btn">Enter Marketplace</a>
-
+		
 		<h2>Follow us</h2>
-
+		
 		<div class="social">
 			<a href="https://twitter.com/A16ZNFT" target="@A16Z"><i class="fab fa-twitter fa-3x"></i></a>
 		</div>
-	</section>
-	<!-- partial -->
-
-</body>
-
-</html>
+		</section>
+		<!-- partial -->
+		
+		</body>
+		
+		</html>
